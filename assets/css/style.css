@@ -1,0 +1,350 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+/* font-family: 'Poppins', sans-serif;*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    list-style-type: none;
+}
+body{
+    overflow-x: hidden; 
+}
+a,p{
+    color: #555;
+}
+.menu-icon{
+    width: 28px;
+    margin-left: 20px;
+    cursor: pointer;
+    display: none;
+}
+
+/* header section */
+.header{
+    background: radial-gradient(#fff,#ffd6d6);
+    width: 100%;
+    height: 100h;
+}
+.logo img{
+    width: 125px;
+    cursor: pointer;
+}
+.container{
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.navbar{
+    display: flex;
+    padding: 20px;
+    align-items: center;
+}
+.navbar .cart {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+nav{
+    flex: 1;
+    text-align: right;
+}
+nav ul{
+    display: inline-block; 
+    list-style-type: none;
+}
+nav ul li{
+    display: inline-block; 
+    margin-right: 20px;
+}
+.header .row{
+    margin-top: 70px;
+}
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.col-2{
+    flex-basis: 50%;
+    min-width: 300px;
+}
+.col-2 h1{
+    font-size: 50px;
+    line-height: 60px;
+    margin: 20px 0;
+}
+.col-2 img{
+    max-width: 100%;
+   padding: 50px 0;
+}
+.btn{
+    display: inline-block;
+    color: white;
+    background: #ff523b;
+    padding: 8px 30px;
+    margin: 30px 0;
+    border-radius: 30px;
+}
+.btn:hover{
+    background-color: #563434;
+    transition: .4s all ease;
+}
+/* features catagory css */
+.small-container{
+    max-width: 1080px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.categories{
+    margin: 70px 0;
+}
+ .col-3{
+    flex-basis: 30%;
+    min-width: 250px;
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+.categories .col-3 img{
+    width: 100%;
+    height: 100%;
+}
+.categories .col-3:hover img{
+    transform: scale(1.1);
+    transition: .5s all ease;
+}
+/* featured products */
+.col-4{
+    flex-basis: 25%;
+    max-width: 200px;
+    padding: 10px;
+    margin-bottom: 50px;
+}
+.col-4 img{
+    width: 100%;
+}
+.title{
+    text-align: center;
+    margin: 0 auto 80px;
+    color: #555;
+    line-height: 60px;
+    position: relative;
+}
+.title::after{
+    content: "";
+    background-color: #ff523b;
+    width: 80px;
+    height: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.col-4 h4{
+    color: #555;
+    font-weight: normal;
+}
+.col-4 p{
+   font-size: 14px;
+}
+.ratings .fa-star , .fas{
+    color: #ff532b;
+}
+.col-4:hover{
+    transform: translateY(-5px);
+    transition: .5s all ease;
+}
+/* offer css */
+.offer{
+    background: radial-gradient(#fff,#ffd6d6);
+    margin-top: 80px;
+    padding: 30px 0;
+}
+.col-2 .offer-img{
+    padding: 50px;
+}
+.col-2 small{
+    color: #555;
+}
+/* testimonial */
+.testimonial{
+    padding-top: 100px;
+}
+.testimonial .col-3{
+    padding: 40px 20px;
+    text-align: center;
+    box-shadow: 0 0 20px 0 rgba(0,0,0,.1);
+    cursor: pointer;
+}
+.testimonial .col-3:hover{
+    transform: translateY(-10px);
+    transition: .4s all ease-in-out;
+}
+.testimonial .col-3 img{
+   border-radius: 50%;
+   width: 50px;
+   margin-top: 20px;
+}
+.fa-quote-left{
+    font-size: 34px;
+    color:#ff532b ;
+   margin-left: -180px;
+}
+.testimonial .col-3 p{
+    font-size: 12px;
+    margin: 12px 0;
+    color: #777;
+}
+.testimonial .col-3 h3{
+    font-weight: 600;
+    color: #555;
+    font-size: 16px;
+}
+/* brands css */
+.brands{
+    margin: 100px auto;
+}
+.col-5{
+    width: 160px;
+}
+.col-5 img{
+    width: 100%;
+    cursor: pointer;
+    filter: grayscale(100%);
+}
+.col-5 img:hover{
+    filter: grayscale(0);
+    transition: .2s all ease;
+}
+/* footer  */
+.footer{
+    background-color: black;
+    color: #8a8a8a;
+    font-size: 14px;
+    padding: 60px 0 20px;
+}
+.footer p{
+    color: #8a8a8a;
+}
+.footer h3{
+    color: #fff;
+    margin-bottom: 20px;
+}
+.footer li {
+    cursor: pointer;
+}
+.footer-col-1,.footer-col-2,
+.footer-col-3,.footer-col-4{
+    min-width: 250px;
+    margin-bottom: 20px;
+}
+.footer-col-1{
+    flex-basis: 30%;
+}
+.footer-col-2{
+    flex: 1;
+    text-align: center;
+}
+.footer-col-2 img{
+    width: 180px;
+    margin-bottom: 20px;
+}
+.footer-col-3,.footer-col-4{
+    flex-basis: 12%;
+    text-align: center;
+}
+.app-logo{
+    margin-top: 20px;
+}
+.app-logo img{
+    width: 140px;
+    height: 40px; 
+    cursor: pointer;
+    margin-right: 10px;
+}
+hr{
+    border: none;
+    height: 1px;
+    background-color: #ff532b;
+    margin: 20px 0;
+}
+.copy{
+    text-align: center;
+}
+/* product 2nd page css */
+.row-2{
+    justify-content: space-between;
+    margin: 100px auto 50px;
+}
+select{
+    border: 1px solid #ff523b;
+    padding: 5px;
+    transition: .5s all ease;
+}
+select:focus{
+   outline: none;
+   
+}
+.page-btn{
+    margin: 0 auto 80px;
+
+}
+.page-btn span{
+    display: inline-block;
+    border: 1px solid #ff523b;
+    margin-left: 10px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+}
+.page-btn span:hover{
+    background-color: #ff523b;
+    color: white;
+    transition: .4s all ease;
+}
+
+
+
+
+/* media query */
+@media only screen and (max-width:800px) {
+    nav ul{
+        position: absolute;
+        top: 70px;
+        right: 0;
+        width: 30%;
+        background: #333;
+        overflow: hidden;
+        transition: .4s all ease;
+    }
+    nav ul li{
+        display: block;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-right: 50px;
+    }
+    nav ul li a{
+        color: white;
+    }
+    .menu-icon{
+        display: block;
+    }
+    
+    
+}
+/* media for less 600px */
+@media only screen and (max-width:600px){
+    .row{
+        text-align: center;
+    }
+    .col-2,.col-3,.col-4{
+        flex-basis: 100%;
+    }
+}
